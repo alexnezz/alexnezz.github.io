@@ -1,0 +1,115 @@
+/* fonts */
+@font-face {
+    font-family: 'Rancher';
+    src: url(../fonts/Ranchers-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url(../fonts/Lobster-Regular.ttf) format('truetype');
+}
+
+body {
+    margin-top: 50px;
+}
+
+
+
+
+
+.jumbotron img {
+    width: 200px;
+    border: 5px solid #333;
+    box-shadow: 1px 1px 5px whitesmoke;
+}
+
+hr {
+    width: 200px;
+    border-top: 3px solid grey;
+}
+
+h2 {
+    font-family: 'Rancher', 'Times New Roman', Times, serif;
+}
+
+.judul {
+    font-family: 'Lobster';
+    font-size: 20px;
+    color: green;
+    font-style: italic;
+}
+
+.jumbotron {
+    background-image: url(../gambar/laptop.jpg);
+    min-height: 500px;
+    background-size: cover;
+    background-position: 0px -20px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.jumbotron h1 {
+    text-shadow: 0 0 3px 5px rgba(0, 0, 0, .5);
+}
+
+.jumbotron p {
+    text-shadow: 0 0 3px 5px rgba(0, 0, 0, .5);
+}
+
+.portofolio {
+    background-color: #ddd;
+}
+
+.portofolio .thumbnail {
+    opacity: 0;
+    transition: 1s;
+    transform: scale(0);
+}
+
+.portofolio .thumbnail.muncul {
+    opacity: 1;
+    transform: scale(1);
+}
+
+section {
+    min-height: 600px;
+}
+
+.pKiri {
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0, 50px);
+}
+
+.pKanan {
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0, -50px);
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.contact {
+    min-height: 800px;
+}
+
+footer {
+    background-color: #333;
+    height: 120px;
+    padding: 30px;
+}
+
+footer i {
+    color: red;
+}
+
+footer p {
+    color: whitesmoke;
+}

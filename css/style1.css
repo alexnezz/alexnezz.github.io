@@ -1,0 +1,110 @@
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
+
+.jumbotron img {
+    width: 200px;
+    border: 3px solid #333;
+}
+
+.jumbotron {
+    background-image: url(../gambar/laptop.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0px -50px;
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.jumbotron h1 {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0.5);
+}
+
+.jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0.5);
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+section {
+    min-height: 600px;
+}
+
+.contact {
+    min-height: 800px;
+}
+
+.about {
+    min-height: 400px;
+}
+
+.pKiri {
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0px, -100px);
+}
+
+.pKanan {
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0px, 100px);
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.portofolio {
+    background-color: #ddd;
+}
+
+.portofolio .thumbnail {
+    opacity: 0;
+    transition: 1s;
+    transform: scale(0);
+}
+
+.portofolio .thumbnail.muncul {
+    opacity: 1;
+    transform: scale(1);
+}
+
+footer {
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    padding-top: 30px;
+}
+
+footer p {
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+
+footer p a {
+    color: orange;
+    font-weight: bold;
+}
+
+footer p i {
+    color: red;
+}
+
+footer i {
+    color: red;
+    font-size: 1.3em;
+}
